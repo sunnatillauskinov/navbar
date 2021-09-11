@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            $('#menu').click(function() {
+                $('.nav__list').toggleClass('show')
+            })
+        })
+    </script>
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <label class="logo">AirPay</label>
+            <ul class="nav__list">
+                <li class="nav__item"><a href="#" class="nav__link active">Home</a></li>
+                <li class="nav__item"><a href="#" class="nav__link">About</a></li>
+                <li class="nav__item"><a href="#" class="nav__link">Dreams</a></li>
+                <li class="nav__item"><a href="#" class="nav__link">Contact</a></li>
+                <li class="nav__item"><a href="#" class="nav__link">Feedback</a></li>
+
+                <div class="info">
+                    <h4>&check;  website by Sunnatilla</h4> 
+                </div>
+            </ul>
+
+            <label id="menu">
+            <ion-icon name="menu-outline"></ion-icon>
+        </label>
+        </nav>   
+    </header>
+
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
